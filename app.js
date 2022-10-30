@@ -34,17 +34,17 @@ var createNewTaskElement=function(taskString){
     var deleteButtonImg=document.createElement("img");//martrix-container__delete button image
 
     label.innerText=taskString;
-    label.className='task';
+    label.className='martrix-container__task';
 
     //Each elements, needs appending
     checkBox.type="checkbox";
     editInput.type="text";
-    editInput.className="task";
+    editInput.className="martrix-container__task";
 
     editButton.innerText="Edit"; //innerText encodes special characters, HTML does not.
-    editButton.className="martrix-container__edit";
+    editButton.className="button martrix-container__edit";
 
-    deleteButton.className="martrix-container__delete";
+    deleteButton.className="button martrix-container__delete";
     deleteButtonImg.src='./remove.svg';
     deleteButton.appendChild(deleteButtonImg);
 

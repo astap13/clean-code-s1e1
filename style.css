@@ -58,11 +58,11 @@ h3 {
 }
 
 input,
-button{
+.button{
   outline: none;
 }
 
-button {
+.button {
   background: none;
   border: 0px;
   color: #888;
@@ -72,13 +72,13 @@ button {
   cursor: pointer;
 }
 
-button:hover {
+.button:hover {
   color: #3a3a3a;
 }
 
 /* heading */
 
-h3,
+.matrix-container__title,
 label[for="new-task"] {
   color: #333;
   font-weight: 700;
@@ -148,32 +148,32 @@ li >    input[type="text"] {
   width: 226px;
 }
 
-button.martrix-container__delete img {
+.button.martrix-container__delete img {
   height: 2em;
   transform: rotatez(45deg);
   transition: transform 200ms ease-in;
 }
 
-button.martrix-container__delete img:hover {
+.button.martrix-container__delete img:hover {
   transform: rotatez(0);
 }
 
 /* completed */
-ul#completed-tasks label {
+#completed-tasks label {
   text-decoration: line-through;
   color: #888;
 }
 
 /* edit task */
-ul li input[type=text] {
+li input[type=text] {
   display: none;
 }
 
-ul li.martrix-container__edit-mode input[type=text] {
+li.martrix-container__edit-mode input[type=text] {
   display: inline-block;
   width: 224px;
 }
 
-ul li.martrix-container__edit-mode label {
+li.martrix-container__edit-mode label {
   display: none;
 }
